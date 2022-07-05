@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Đăng ký</title>
+    </head>
+    <body>
+       <form action="http://demo.codegym.vn/6/registration_form/register.php" method="post" name="form-login">
+        <fieldset>
+
+            <legend><h2> ĐĂNG KÝ NGƯỜI DÙNG </h2></legend>
+
+            <label for ="name">Họ và tên:</label><br>
+            <input type="text" id="name" name="name"><br>
+        
+            <label for ="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+
+            <label for ="phone">Số điện thoại:</label><br>
+            <input type="text" id="phone" name="phone"><br>
+
+            <label for ="gender">Giới tính:</label><br>
+                <input name="gender" value="male" type="radio" id="male" checked/>
+                <label for = "male">Nam</label>
+            
+                <input name="gender" value="female" type="radio" id="female"/>
+                <label for = "female">Nữ</label> <br> <!--Chọn nữ là tự tích ô radio-->
+                
+            <input type="submit" name="submit" value="Đăng ký"/>
+
+        </fieldset>
+       </form>
+    </body>
+</html>
