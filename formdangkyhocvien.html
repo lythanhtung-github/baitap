@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Form đăng ký học viên</title>
+    </head>
+    <body> 
+        <form>
+            <fieldset style="background-color:rgb(241, 241, 133) ;">
+                <h1 style="padding: 10px 0px 10px 0px; margin: 0 0 10px 0;
+                text-align: LEFT; color: rgb(2, 27, 247); background-color: rgb(93, 172, 236);">
+                ĐĂNG KÝ HỌC VIÊN
+                </h1>
+                <table>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <tr>
+                        <tr><td><label style="color:blue; font-weight:bold"; 
+                            for="name">Họ và tên:</label></td>
+                            <td><input type="text" name="name" id="name"></td>
+                        </tr>
+                        <tr><td><label style="color:blue; font-weight:bold"; 
+                            for="date">Ngày sinh:</label></td>
+                            <td><input type="text" name="date" id="date"></td>
+                        </tr>
+                        <tr>
+                            <td><label style="color:blue; font-weight:bold"; 
+                            for="gender">Giới tính:</label></td>
+                            <td><input name="gender" value="male" type="radio" id="male" checked/>
+                                <label for = "male">Nam</label>
+            
+                                <input name="gender" value="female" type="radio" id="female"/>
+                                <label for = "female">Nữ</label> 
+                            </td>
+                        </tr>  
+                        <tr><td><label style="color:blue; font-weight:bold"; 
+                            for="adress">Địa chỉ:</label></td>
+                            <td><input type="text" name="adress" id="adress"></td>
+                        </tr>
+                        <tr>
+                            <td><label style="color:blue; font-weight:bold"; 
+                            for="class">Lớp:</label></td>
+                            <td>
+                                <select name="class" id="class">
+                                    <option value="0">--Chọn lớp--</option>
+                                    <option value="34">Tin học kinh tế A</option>
+                                    <option value="46">Tin học kinh tế B</option>
+                                    <option value="68">Thống kê kinh doanh A</option>
+                                    <option value="812">Thống kê kinh doanh B</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr><td><label style="color:blue; font-weight:bold"; 
+                            for="email">Email:</label></td>
+                            <td><input type="text" name="email" id="email"></td>
+                        </tr>
+                        <tr><td><label style="color:blue; font-weight:bold"; 
+                            for="phone">Điện thoại:</label></td>
+                            <td><input type="text" name="phone" id="phone"></td>
+                        </tr>
+                        <tr>   
+                            <td></td>
+                            <td><input type="button" name="travel" value="Đăng ký">
+                                <button type="reset" value="submit">Nhập lại</button></td>
+                        </tr>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>
