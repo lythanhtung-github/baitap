@@ -6,19 +6,44 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Tìm kiếm</title> 
    </head>
-<body>
+<body style="background-image: url(https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?cs=srgb&dl=pexels-simon-berger-1323550.jpg&fm=jpg); background-attachment: fixed;">
   <form action="https://www.google.com/search" method="get">
     <table border="1">
       <tbody>
         <tr>
+          <td><label for="color">Color</label></td>
+          <td>
+            <input type="color" id="color"><br>
+            <input type="range" id="range"><br>
+            <input type="image" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia-cdn-v2.laodong.vn%2FStorage%2FNewsPortal%2F2021%2F5%2F26%2F913299%2FNgan-Ha25.jpg&imgrefurl=https%3A%2F%2Flaodong.vn%2Fthe-gioi%2Fman-nhan-voi-25-buc-anh-giai-nhiep-anh-gia-dai-ngan-ha-nam-2021-913299.ldo&tbnid=bHaSQgA_OE7HRM&vet=12ahUKEwiPtOOAo-j4AhV9yIsBHa_UDAcQMygBegUIARC8AQ..i&docid=CqlCoHkFLwQfCM&w=960&h=529&q=%E1%BA%A3nh&ved=2ahUKEwiPtOOAo-j4AhV9yIsBHa_UDAcQMygBegUIARC8AQ" >
+          </td>
+        </tr>
+        <tr>
           <td><label for="keyword">Keyword</label></td>
           <td><input type="text" name="q" id="keyword" placeholder="keyword"></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email</label></td>
+          <td><input type="email" name="email" required>
+        </tr>
+        <tr>
+          <td><label for="tel">Mobile</label></td>
+          <td><input type="tel" name="tel" id="tel">
+        </tr>
+        <tr>
+          <td><label for="datetime">Date of birth</label></td>
+          <td><input type="date" name="datetime"><br>
+            <input type="datetime-local" name="datetime-local"><br>
+            <input type="month" name="month"><br>
+            <input type="week" name="week">
+          </td>
         </tr>
         <tr>
           <td colspan="2">
             <button type="submit">Search Google</button>
           </td>
         </tr>
+        
       </tbody>
     </table>
   </form>
@@ -28,13 +53,15 @@
         <tr>
           <td><label for="keyword">Keyword</label></td>
           <td><input type="search" name="q" id="keyword" placeholder="Nhập từ khóa"></td>
+          </td>
         </tr>
+       
         <tr>
           <td colspan="2">
             <button type="submit">Search Bing</button>
           </td>
         </tr>
-      </tbody>
+       </tbody>
     </table>
   </form>
 <!-- <form action="https://www.google.com/search" method="get">
